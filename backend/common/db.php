@@ -2,7 +2,7 @@
 
 // delete before deploy!
 include('logger.php');
-include('credentials.php');
+require('credentials.php');
 mysqli_report(MYSQLI_REPORT_ERROR);
 
 // Create connection
