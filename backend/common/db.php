@@ -21,7 +21,7 @@ if ($result->num_rows > 0) {
     echo "total records: $result->num_rows";
     // output data of each row
     while ($row = $result->fetch_object()) {
-        //echo json_encode($row->last_name);
+        echo json_encode($row->last_name);
     }
 } else {
     echo "0 results";
