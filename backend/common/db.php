@@ -3,7 +3,7 @@
 // delete before deploy!
 include('logger.php');
 include('credentials.php');
-mysqli_report(MYSQLI_REPORT_ALL);
+mysqli_report(MYSQLI_REPORT_ERROR);
 
 // Create connection
 $conn = new mysqli($server, $admin, $pass, $dbname);
@@ -14,7 +14,7 @@ if ($conn->connect_error) {
 }
 
 
-$sql = "SELECT last_name FROM students";
+$sql = "SELECT last_name FROM student";
 $result = $conn->query($sql);
 
 echo "Backend connected successfully";
