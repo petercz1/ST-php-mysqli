@@ -9,7 +9,7 @@ function setup(){
 
 function check_backend(){
     console.log('Inside check_backend');
-    $.get('backend/common/check.php').success(success).fail(fail);
+    $.get('backend/common/db.php').success(success).fail(fail);
 }
 
 function success(data){
