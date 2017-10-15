@@ -13,7 +13,7 @@ function check_backend(){
 }
 
 function success(data){
-    console.log(data);
+    console.log(data);    
 }
 
 function fail(data){
