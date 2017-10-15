@@ -18,7 +18,7 @@ $sql = "SELECT last_name, course FROM teachers";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
-    echo json_encode($result->fetch_all);
+    echo json_encode($result->fetch_all());
 } else {
     echo "0 results";
 }
