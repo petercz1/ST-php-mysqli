@@ -6998,3 +6998,4 @@ line 23 (db.php) Colin
 line 23 (db.php) Guillford
 line 23 (db.php) Farlamb
 line 23 (db.php) Scapens
+Line 21 in db.php, Undefined property: mysqli_result::$fetch_all  (ErrorException)
