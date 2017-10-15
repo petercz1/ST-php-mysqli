@@ -14,7 +14,7 @@ if ($conn->connect_error) {
 }
 
 
-$sql = "SELECT last_name FROM student";
+$sql = "SELECT last_name FROM students";
 $result = $conn->query($sql);
 
 echo "Backend connected successfully";
