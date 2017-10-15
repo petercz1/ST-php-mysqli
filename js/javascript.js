@@ -13,7 +13,8 @@ function check_backend(){
 }
 
 function success(data){
-    console.log(data);    
+    console.log(data);
+    // results are an array of json objects - woohoo!    
 }
 
 function fail(data){
