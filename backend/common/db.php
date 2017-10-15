@@ -16,4 +16,9 @@ $conn = new mysqli($servername, $username, $password);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
+
+
+$sql = "SELECT last_name FROM MyGuests";
+$result = $conn->query($sql);
+
 echo "Backend connected successfully";
