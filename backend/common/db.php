@@ -14,13 +14,18 @@ if ($conn->connect_error) {
 }
 
 $sql = "SELECT last_name, first_name, gender FROM teachers";
-$result = $conn->query($sql);
+$db_result = $conn->query($sql);
 
-if ($result->num_rows > 0) {
-    echo json_encode($result->fetch_all());
+$response = [];
+
+if ($db_result->num_rows > 0) {
+    array_push($response)
 } else {
     echo "0 results";
 }
+
+echo json_encode($response);
+
 $conn->close();
 
 
