@@ -5,10 +5,8 @@ include('logger.php');
 include('credentials.php');
 mysqli_report(MYSQLI_REPORT_ALL);
 
-$servername = "localhost";
-
 // Create connection
-$conn = new mysqli($servername, $admin, $pass, $dbname);
+$conn = new mysqli($server, $admin, $pass, $dbname);
 
 // Check connection
 if ($conn->connect_error) {
@@ -16,7 +14,7 @@ if ($conn->connect_error) {
 }
 
 
-$sql = "SELECT last_name FROM MyGuests";
+$sql = "SELECT last_name FROM students";
 $result = $conn->query($sql);
 
 echo "Backend connected successfully";
