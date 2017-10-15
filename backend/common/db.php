@@ -14,7 +14,7 @@ if ($conn->connect_error) {
 }
 
 
-$sql = "SELECT last_name, first_name, gender FROM teachers";
+$sql = "SELECT last_name, first_name, gener FROM teachers";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
