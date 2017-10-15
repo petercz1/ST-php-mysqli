@@ -1,1 +1,0 @@
-Line 5 in db.php, Use of undefined constant credentials - assumed 'credentials'  (ErrorException)Line 18 in db.php, No index used in query/prepared statement SELECT last_name FROM students  (mysqli_sql_exception)Line 18 in db.php, mysqli::query(): (42S02/1146): Table 'college.student' doesn't exist  (ErrorException)
