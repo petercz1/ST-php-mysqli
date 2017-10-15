@@ -10,8 +10,11 @@ $conn = new mysqli($server, $admin, $pass, $dbname);
 
 // Check connection
 if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+    echo "Connection failed: " . $conn->connect_error;
+} else {
+    echo 'beckend connection succeeded!';
 }
+
 
 $sql = "SELECT last_name, first_name, gender FROM teachers";
 $db_result = $conn->query($sql);
