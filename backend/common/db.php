@@ -3,7 +3,7 @@
 // delete before deploy!
 include('logger.php');
 include('credentials.php');
-//mysqli_report(MYSQLI_REPORT_ERROR);
+mysqli_report(MYSQLI_REPORT_ERROR);
 
 // Create connection
 $conn = new mysqli($server, $admin, $pass, $dbname);
