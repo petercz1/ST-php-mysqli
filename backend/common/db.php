@@ -19,7 +19,6 @@ $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
     echo json_encode($result);
-    }
 } else {
     echo "0 results";
 }
