@@ -19,12 +19,9 @@ $db_result = $conn->query($sql);
 $response = [];
 
 if ($db_result->num_rows > 0) {
-
-while($row = $db_result->fetch_object()){
-    array_push($resonse, $row)
-}
-
-
+    while ($row_object = $db_result->fetch_object()) {
+        array_push($response, $row_object);
+    }
 } else {
     echo "0 results";
 }
@@ -32,6 +29,3 @@ while($row = $db_result->fetch_object()){
 echo json_encode($response);
 
 $conn->close();
-
-
-echo "Backend connected successfully";
