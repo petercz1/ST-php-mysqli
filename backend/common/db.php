@@ -12,7 +12,7 @@ $conn = new mysqli($server, $admin, $pass, $dbname);
 if ($conn->connect_error) {
     echo "Connection failed: " . $conn->connect_error;
 } else {
-    echo 'beckend connection succeeded!';
+    echo 'backend connection succeeded!';
 }
 
 
