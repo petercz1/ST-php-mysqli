@@ -1,6 +1,6 @@
 <?php
 
-// logs errors made by objects ie exceptions
+// logs errors made by objects ar called exceptions
 //function log_exception(Exception $e) // for php < 7.0
 function log_exception(Throwable $e) // for php => 7.0
 {

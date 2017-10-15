@@ -1,1 +1,0 @@
-Line 20 in db.php, Trying to get property of non-object  (ErrorException)Line 18 in db.php, mysqli::query(): (42S22/1054): Unknown column 'gener' in 'field list'  (ErrorException)
