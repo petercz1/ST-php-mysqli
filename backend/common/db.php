@@ -2,7 +2,7 @@
 
 // delete before deploy!
 include('logger.php');
-include(credentials.php);
+include('credentials.php');
 mysqli_report(MYSQLI_REPORT_ALL);
 
 $servername = "localhost";
@@ -16,4 +16,4 @@ $conn = new mysqli($servername, $username, $password);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
-echo "Connected successfully";
+echo "Backend connected successfully";
