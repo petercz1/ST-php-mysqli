@@ -19,7 +19,12 @@ $db_result = $conn->query($sql);
 $response = [];
 
 if ($db_result->num_rows > 0) {
-    array_push($response)
+
+while($row = $db_result->fetch_object()){
+    array_push($resonse, $row)
+}
+
+
 } else {
     echo "0 results";
 }
