@@ -6998,4 +6998,4 @@ line 23 (db.php) Colin
 line 23 (db.php) Guillford
 line 23 (db.php) Farlamb
 line 23 (db.php) Scapens
-Line 21 in db.php, Undefined property: mysqli_result::$fetch_all  (ErrorException)
+Line 21 in db.php, Undefined property: mysqli_result::$fetch_all  (ErrorException)Line 18 in db.php, mysqli::query(): (42S22/1054): Unknown column 'gener' in 'field list'  (ErrorException)Line 20 in db.php, Trying to get property of non-object  (ErrorException)

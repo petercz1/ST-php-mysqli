@@ -3,7 +3,7 @@
 // delete before deploy!
 include('logger.php');
 include('credentials.php');
-mysqli_report(MYSQLI_REPORT_ERROR);
+//mysqli_report(MYSQLI_REPORT_ERROR);
 
 // Create connection
 $conn = new mysqli($server, $admin, $pass, $dbname);
@@ -14,7 +14,7 @@ if ($conn->connect_error) {
 }
 
 
-$sql = "SELECT last_name, first_name, gener FROM teachers";
+$sql = "SELECT last_name, first_name, gender FROM teachers";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
