@@ -13,7 +13,6 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-
 $sql = "SELECT last_name, first_name, gender FROM teachers";
 $result = $conn->query($sql);
 
